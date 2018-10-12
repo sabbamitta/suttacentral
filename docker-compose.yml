@@ -111,6 +111,27 @@ services:
       - ./client/:/opt/sc/frontend/
       - ./pootle_pipeline/:/opt/sc/po_files/
       
+  sc-chrome-headless:
+    image: justinribeiro/chrome-headless
+    container_name: 'sc-chrome-headless'
+    labels:
+      application: 'sc-chrome-headless'
+    expose:
+      - '9222'
+    cap_add:
+      - SYS_ADMIN
+      
+  sc-api-tester:
+    build:
+      context: ./server/api-tester/
+      dockerfile: Dockerfile-api-tester
+    container_name: 'sc-api-tester'
+    network_mode: "host"
+    labels:
+      application: 'sc-api-tester'
+    volumes:
+      - ./server/api-tester/:/opt/sc/api-tester/
+      
 networks:
   default:
     external:
