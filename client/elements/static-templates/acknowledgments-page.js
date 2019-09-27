@@ -216,7 +216,7 @@ class AcknowledgmentsPage extends SCStaticPage {
                   ${_`Aminah Borg-Luck`}
                 </td>
                 <td>
-                  ${_`Team manager, text-preparation, forum moderation.`}
+                  ${_`Team facilitator, text-preparation, forum moderation.`}
                 </td>
               </tr>
               <tr>
@@ -229,7 +229,7 @@ class AcknowledgmentsPage extends SCStaticPage {
               </tr>
               <tr>
                 <td>
-                  ${_`Anāgārikā Sabbamittā (Maria Backes)`}
+                  ${_`Anagarika Sabbamitta`}
                 </td>
                 <td>
                   ${_`SuttaCentral Voice development team, German translation, text preparation, and organisation of fund-raising events.`}
